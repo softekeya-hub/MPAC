@@ -1,0 +1,8 @@
+{
+  "name": "Mountain Peak Adventures – Kenya Luxury Safari & Tours",
+  "description": "Award-winning Kenyan safari and adventure tour operator. Bespoke Big Five safaris, Mount Kenya expeditions, and authentic East African journeys.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

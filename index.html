@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Browser extension compatibility shim for sandboxed environments
+      try {
+        if (typeof window !== 'undefined') {
+          let _fetch = window.fetch ? window.fetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            get() {
+              return _fetch;
+            },
+            set(fn) {
+              _fetch = fn;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        }
+      } catch (_) {}
+    </script>
+    <title>Mountain Peak Adventures – Kenya Luxury Safari & Tours</title>
+    <meta name="description" content="Award-winning Kenyan safari and adventure tour operator. Bespoke Big Five safaris, Mount Kenya expeditions, and authentic East African journeys." />
+    <meta property="og:title" content="Mountain Peak Adventures – Kenya Luxury Safari & Tours" />
+    <meta property="og:description" content="Award-winning Kenyan safari and adventure tour operator. Bespoke Big Five safaris, Mount Kenya expeditions, and authentic East African journeys." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mountain Peak Adventures" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mountain Peak Adventures – Kenya Luxury Safari & Tours" />
+    <meta name="twitter:description" content="Award-winning Kenyan safari and adventure tour operator. Bespoke Big Five safaris, Mount Kenya expeditions, and authentic East African journeys." />
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Mountain Peak Adventures Ltd",
+      "alternateName": "Mountain Peak Adventures Kenya",
+      "description": "Premier Kenyan tour operator specializing in bespoke Big Five wildlife safaris, Mount Kenya trekking expeditions, luxury fly-in bush stays, and Diani Beach extensions.",
+      "telephone": "+254718020833",
+      "email": "mountainpeakadventures2@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-1.2685",
+        "longitude": "36.8049"
+      },
+      "priceRange": "$$$$",
+      "currenciesAccepted": "USD, EUR, GBP, KES",
+      "paymentAccepted": "Credit Card, Direct Pay Online (DPO), Pesapal, M-Pesa",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Kenya Association of Tour Operators (KATO)",
+          "identifier": "Bonded Member #584"
+        },
+        {
+          "@type": "Organization",
+          "name": "Tourism Regulatory Authority (TRA)",
+          "identifier": "TRA/TTO/2024/0892"
+        },
+        {
+          "@type": "Organization",
+          "name": "Kenya Tourism Board (KTB)",
+          "identifier": "Magical Kenya Certified"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#14100B] text-[#EFE7DA] antialiased selection:bg-[#D4AF37]/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
